@@ -21,6 +21,11 @@ body{
     background-size: cover;
     background-position: center;
   }
+   
+  .menuburger{
+    display: none;
+  }
+
 .navbar{
     background-color:rgba(255, 255, 255, 0.618);
     display: flex;
@@ -59,18 +64,6 @@ body{
     background: #C0AA8C;   
     color: white;
 }
-/* 
-.arriere{
-    height: 25vh;
-    width: 70vw;
-    background-color:rgba(255, 255, 255, 0.414);
-   display: flex;
-   align-content: center;
-   align-items: center;
-   margin: auto;
-   margin-top: 27vh;
-   border-radius: 10%;
-   */
 
 
 .titre1 h1{
@@ -81,14 +74,13 @@ body{
    font-size: 6vh;
 }
 
-  
     
 
 /*Présentation*/
 
 
 .back2{
-    height: 53vh;
+    height: 54vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
@@ -122,10 +114,8 @@ body{
     color: white;
     margin-left: 6vw;  
 }
-/* .imgdroite{
-    height: 70vh;
-    width: 30vw;
-} */
+
+
 .imgdroite img{
     height: 70vh;
     width: 30vw;
@@ -349,7 +339,7 @@ height: 10vh;
 
 .cotedroit2{
     height: 100%;
-    width: 90vw;
+    width: 100vw;
     background-image: url(img/Capture\ d’écran\ 2023-11-27\ à\ 13.54.03.png);
     background-position: center;
     background-size: cover;
@@ -553,29 +543,47 @@ body .back7{
   ACCUEIL */
 
  /* tablette  */
-@media screen and (min-width: 401px) and (max-width: 1000px) {
 
-}
-
- /* mobile  */
-@media screen and (max-width: 430px) {
+@media screen and (min-width: 768px) and (max-width: 1023px){
+ 
     .back{
-       
         height: 100vh;
         width: 100vw;
-        opacity: 85%;
-        background-size: cover;
-        background-position: center;
-      }
-    li{
-        display: none;
-    }   
-
-    .titre1 h1{
-        /* text-align: center;
-        margin-top: 20%;
-        font-size: 3vh; */
-        display: none;
     }
-  
+
+    ul {
+       display: none; /* Ajoutez des styles spécifiques pour les balises li sur mobile ici */
+    }
+
+    .titre1 h1 {
+        display: none; /* ou ajoutez des styles spécifiques pour masquer sur mobile */
+    }
+ 
+    .menuburger{
+        display: block;
+        height: 25px;
+    width: 25px;
+      }
 }
+  /* mobile  */
+  @media screen and (max-width: 767px){
+
+    .back{
+        height: 100vh;
+        width: 100vw;
+    }
+
+  .menuburger{
+    display: block;
+    height: 15px;
+    width: 15px;
+  }
+
+    ul {
+       display: none; 
+    }
+
+    .titre1 h1 {
+        display: none; 
+    }
+  }
